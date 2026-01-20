@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col md:flex-row items-center justify-center min-h-screen"
+    >
+      <div class="p-6">
+        <h1 class="title">
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p class="text-left text-white mt-4 mb-6 ms-5">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form sm:w-80 md:w-full md:me-10 sm:me-0 sm:w-50">
+        <h2 class="bg-[#5C54A2] text-white p-4 mb-5 text-center rounded-xl">
+          Try it free 7 days then $20/mo. thereafter
+        </h2>
+        <form
+          id="signupForm"
+          class="flex flex-col w-full items-center bg-white p-6 rounded-lg shadow-lg"
+        >
+          <input id="first-name" type="text" placeholder="First Name" />
+          <p class="hidden text-red-500 text-xs">First Name cannot be empty</p>
+          <input id="last-name" type="text" placeholder="Last Name" />
+          <p class="hidden text-red-500 text-xs">Last Name cannot be empty</p>
+          <input id="email-address" type="email" placeholder="Email Address" />
+          <p class="hidden text-red-500 text-xs">
+            Email Address cannot be empty
+          </p>
+          <input id="password" type="password" placeholder="Password" />
+          <p class="hidden text-red-500 text-xs">Password cannot be empty</p>
+          <button
+            type="submit"
+            class="bg-[#37CD8A] w-full mt-5 p-5 rounded-lg text-white"
+          >
+            Claim your free trial
+          </button>
+          <div class="text-center text-[#B3B3B3] text-sm mt-4">
+            By clicking the button, you are agreeing to our
+            <span class="text-[#FE7876]">Terms and Services</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Soad Eslam</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
