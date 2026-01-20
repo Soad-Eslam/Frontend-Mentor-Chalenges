@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div
+      id="container"
+      class="flex flex-col items-center bg-[#212932] w-96 p-10 rounded-3xl gap-6"
+    >
+      <div
+        class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-700"
+      >
+        <img src="images/icon-star.svg" alt="" />
+      </div>
+      <div>
+        <h1 class="text-3xl font-extrabold">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="flex w-80 justify-between">
+        <span
+          id="n1"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          >1</span
+        >
+        <span
+          id="n2"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          >2</span
+        >
+        <span
+          id="n3"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          >3</span
+        >
+        <span
+          id="n4"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          >4</span
+        >
+        <span
+          id="n5"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          >5</span
+        >
+      </div>
+      <button id="submitButton" class="bg-[#FE7714] w-80 p-4 rounded-3xl">
+        Submit
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
