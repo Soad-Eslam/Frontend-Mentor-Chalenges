@@ -2,4 +2,16 @@ body{
     background-image: url("assets/images/background-pattern-desktop.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-color:  hsl(275, 100%, 97%);
+     font-family: "Overpass", sans-serif;
+}
+@media (max-width: 600px) {
+  body{
+    padding: 20px;
+    background-size: 200% auto;
+  }
+  .faq-container{
+    width: 320px;
+    margin-top: 0 !important;
+  }
 }
