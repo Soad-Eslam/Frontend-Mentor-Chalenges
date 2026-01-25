@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Interactive rating component</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,13 +38,13 @@
       class="flex flex-col items-center bg-[#212932] w-96 p-10 rounded-3xl gap-6"
     >
       <div
-        class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-700"
+        class="flex h-10 w-10 items-center justify-center relative left-[-120px] rounded-full bg-gray-700"
       >
         <img src="images/icon-star.svg" alt="" />
       </div>
       <div>
-        <h1 class="text-3xl font-extrabold">How did we do?</h1>
-        <p>
+        <h1 class="text-3xl mb-4 font-bold">How did we do?</h1>
+        <p class="text-gray-500">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
@@ -46,32 +52,32 @@
       <div class="flex w-80 justify-between">
         <span
           id="n1"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-bold hover:bg-white hover:text-black cursor-pointer"
           >1</span
         >
         <span
           id="n2"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-bold hover:bg-white hover:text-black cursor-pointer"
           >2</span
         >
         <span
           id="n3"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-bold hover:bg-white hover:text-black cursor-pointer"
           >3</span
         >
         <span
           id="n4"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-bold hover:bg-white hover:text-black cursor-pointer"
           >4</span
         >
         <span
           id="n5"
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-bold hover:bg-white hover:text-black cursor-pointer"
           >5</span
         >
       </div>
-      <button id="submitButton" class="bg-[#FE7714] w-80 p-4 rounded-3xl">
-        Submit
+      <button id="submitButton" class="bg-[#FE7714] hover:bg-white text-gray-900 font-bold w-80 p-4 rounded-3xl">
+        SUBMIT
       </button>
     </div>
     <script src="script.js"></script>

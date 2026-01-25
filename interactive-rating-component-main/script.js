@@ -13,12 +13,12 @@ fields.forEach((field) => {
     // Remove active class from all fields
     fields.forEach((f) => {
       const el = document.getElementById(f.id);
-      el.classList.remove("bg-[#FE7714]", "text-white");
-      el.classList.add("bg-gray-700", "text-black");
+      el.classList.remove("bg-[#FE7714]");
+      el.classList.add("bg-gray-700");
     });
     // Add active class to the clicked field
-    element.classList.add("bg-[#FE7714]", "text-white");
-    element.classList.remove("bg-gray-700", "text-black");
+    element.classList.add("bg-[#FE7714]");
+    element.classList.remove("bg-gray-700");
     element.style.cursor = "pointer";
     currentValue = field.value;
   });
@@ -31,7 +31,7 @@ button.addEventListener("click", () => {
             <div class="flex flex-col items-center gap-6">
                 <img src="images/illustration-thank-you.svg" alt="" />
                 <span class="bg-gray-700 rounded-3xl px-4 py-2 text-[#FE7714]">You selected ${currentValue} out of 5</span>
-                <h1 class="text-3xl font-extrabold">Thank you!</h1>
+                <h1 class="text-3xl font-bold">Thank you!</h1>
                 <p class="text-center text-gray-400">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
             </div>
         </div>

@@ -1,8 +1,17 @@
 body {
-  background-color: black;
+  background-color: hsl(213, 19%, 18%);
+  font-family: "Overpass", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   color: white;
+}
+@media (max-width: 600px) {
+  body{
+    padding: 20px;
+  }
+  #container {
+    width: 350px;
+  }
 }
