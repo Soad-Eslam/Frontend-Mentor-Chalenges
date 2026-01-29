@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-rose-100">
+    <div
+      class="flex justify-around mx-4 md:mx-[100px] my-[50px] flex-col md:flex-row"
+    >
+      <div>
+        <h1 class="font-bold text-[30px] mb-[20px]">Desserts</h1>
+        <div class="md:flex md:flex-wrap">
+          <div class="flex flex-col md:flex-row gap-6 flex-wrap items-center">
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-waffle-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Waffle</h6>
+              <p>Waffle with Berries</p>
+              <h6 class="text-rose-500">$6.50</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Waffle with Berries"
+                data-price="6.50"
+                data-count="0"
+                data-src="assets/images/image-waffle-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-creme-brulee-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Crème Brûlée</h6>
+              <p>Vanilla Bean Crème Brûlée</p>
+              <h6 class="text-rose-500">$7.00</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Crème Brûlée"
+                data-price="7.00"
+                data-count="0"
+                data-src="assets/images/image-creme-brulee-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-macaron-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Macaron</h6>
+              <p>Macaron Mix of Five</p>
+              <h6 class="text-rose-500">$8.00</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Macaron Mix of Five"
+                data-price="8.00"
+                data-count="0"
+                data-src="assets/images/image-macaron-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 flex-wrap items-center">
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-tiramisu-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Tiramisu</h6>
+              <p>Classic Tiramisu</p>
+              <h6>5.50</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Classic Tiramisu"
+                data-price="5.50"
+                data-count="0"
+                data-src="assets/images/image-tiramisu-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-baklava-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Baklava</h6>
+              <p>Pistachio Baklava</p>
+              <h6 class="text-rose-500">$4.00</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Pistachio Baklava"
+                data-price="4.00"
+                data-count="0"
+                data-src="assets/images/image-baklava-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-meringue-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Pie</h6>
+              <p>Lemon Meringue Pie</p>
+              <h6 class="text-rose-500">$5.00</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Lemon Meringue Pie"
+                data-price="5.00"
+                data-count="0"
+                data-src="assets/images/image-meringue-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 flex-wrap items-center">
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-cake-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Cake</h6>
+              <p>Red Velvet Cake</p>
+              <h6 class="text-rose-500">$4.50</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Red Velvet Cake"
+                data-price="4.50"
+                data-count="0"
+                data-src="assets/images/image-cake-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-brownie-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Brownie</h6>
+              <p>Salted Caramel Brownie</p>
+              <h6 class="text-rose-500">$4.50</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Salted Caramel Brownie"
+                data-price="4.50"
+                data-count="0"
+                data-src="assets/images/image-brownie-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+            <div class="relative mb-5">
+              <img
+                class="w-48 rounded-lg"
+                src="assets/images/image-panna-cotta-desktop.jpg"
+                alt=""
+              />
+              <h6 class="mt-[30px]">Panna Cotta</h6>
+              <p>Vanilla Panna Cotta</p>
+              <h6 class="text-rose-500">$6.50</h6>
+              <button
+                class="add-to-cart absolute top-[170px] left-[20px] bg-white px-4 py-2 rounded-2xl text-rose-500 flex gap-[10px] border border-rose-500"
+                data-name="Vanilla Panna Cotta"
+                data-price="6.50"
+                data-count="0"
+                data-src="assets/images/image-panna-cotta-desktop.jpg"
+              >
+                <img src="assets/images/icon-add-to-cart.svg" alt="" />
+                <span class="text-black">Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="cart"
+        class="bg-white lg:w-[900px] sm:w-full p-6 rounded-lg mt-10 md:mt-0 sm:self-start"
+      >
+        <span class="text-rose-500">
+          Your Cart (<span id="cart-count">0</span>)</span
+        >
+        <p id="empty-cart" class="mt-5">Your added items will appear here</p>
+        <ul id="cart-items" class="mt-4 space-y-2"></ul>
+        <div>
+          <h6 class="mt-6">
+            Order Total:
+            <span class="ms-[100px] font-extrabold text-[20px]">
+              $<span id="cart-total">0.00</span></span
+            >
+          </h6>
+        </div>
+        <button
+          id="checkout-btn"
+          class="mt-6 w-full bg-rose-500 text-white px-4 py-2 rounded-2xl hover:bg-white hover:text-black hover:border-rose-500 border border-rose-500 flex justify-center"
+        >
+          Checkout
+        </button>
+
+        <!-- Modal -->
+        <div
+          id="checkout-modal"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+        >
+          <div class="bg-white rounded-2xl p-6 w-96 relative">
+            <h2 class="text-xl font-bold mb-4">Your Cart</h2>
+            <ul id="modal-cart-items" class="mb-4 space-y-2">
+              <!-- Cart items will be injected here -->
+            </ul>
+            <p class="text-lg font-semibold mb-4">
+              Total: $<span id="modal-cart-total">0.00</span>
+            </p>
+            <button
+              id="close-modal"
+              class="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
+            >
+              ✕
+            </button>
+            <button
+              class="mt-4 w-full bg-rose-500 text-white px-4 py-2 rounded-2xl hover:bg-white hover:text-black hover:border-rose-500 border border-rose-500"
+            >
+              Confirm Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
