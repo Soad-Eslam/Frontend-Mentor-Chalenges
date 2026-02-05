@@ -5,13 +5,20 @@
     <UInput
       v-model="InputValue"
       placeholder="search for a country"
-      class="w-full sm:w-[500px] text-gray-400 dark:text-white bg-white dark:bg-blue-900 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+      class="w-full sm:w-[500px]"
+      :ui="{
+        base: 'dark:text-white placeholder:text-black dark:placeholder:text-white bg-white dark:bg-blue-900 bg-gray-400 rounded',
+        ring: 'focus:ring-2 focus:ring-blue-500',
+      }"
     />
 
     <USelectMenu
       v-model="menuValue"
       :items="items"
-      class="w-full sm:w-auto text-gray-400 dark:text-white bg-white dark:bg-blue-900 border border-gray-400 rounded"
+      :ui="{
+        base: 'dark:text-white bg-white dark:bg-blue-900 bg-gray-400 rounded',
+        ring: 'focus:ring-2 focus:ring-blue-500',
+      }"
     />
   </div>
   <div
