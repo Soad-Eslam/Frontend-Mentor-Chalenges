@@ -7,19 +7,13 @@
       placeholder="search for a country"
       class="w-full sm:w-[500px]"
       color="blue"
-      :ui="{
-        base: 'dark:text-white placeholder:text-black dark:placeholder:text-white bg-white dark:bg-blue-900 bg-gray-400 rounded',
-        ring: 'focus:ring-2 focus:ring-blue-500',
-      }"
+      
     />
 
     <USelectMenu
       v-model="menuValue"
       :items="items"
-      :ui="{
-        base: 'dark:text-white bg-white dark:bg-blue-900 bg-gray-400 rounded',
-        ring: 'focus:ring-2 focus:ring-blue-500',
-      }"
+      
     />
   </div>
   <div
