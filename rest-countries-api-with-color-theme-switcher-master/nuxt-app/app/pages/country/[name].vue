@@ -4,7 +4,7 @@
       
       <button
         @click="goBack"
-        class="mb-6 px-6 py-2 rounded border border-gray-200 dark:bg-blue-900 hover:bg-gray-300 dark:hover:bg-blue-800"
+        class="mb-6 px-6 py-2 bg-gray-400 rounded border border-gray-200 dark:bg-blue-900 hover:bg-gray-300 dark:hover:bg-blue-800"
       >
         ← Back
       </button>
