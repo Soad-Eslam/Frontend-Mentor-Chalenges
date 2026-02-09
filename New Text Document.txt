@@ -1,0 +1,10 @@
+
+What I have learned this week:
+1- Learning how to deal with Jira.
+2- How to work with Git and GitHub.
+3- Refreshing my knowledge of JavaScript.
+4- Knowing when I should ask for help.
+5- How to break a task into smaller tasks.
+
+
+
